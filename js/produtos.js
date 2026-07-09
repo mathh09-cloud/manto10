@@ -11,10 +11,10 @@ const produtos = [
 
     estoque: {
       prontaEntrega: {
-        P: 0,
-        M: 0,
-        G: 0,
-        GG: 0
+        P: 1,
+        M: 1,
+        G: 1,
+        GG: 1
       },
       encomenda: ["P", "M", "G", "GG"]
     },
