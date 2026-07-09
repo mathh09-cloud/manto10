@@ -115,19 +115,36 @@ function fecharModal() {
 }
 
 function selecionarModalidade(modalidade) {
+  const temEstoquePronta = Object.values(produtoSelecionado.estoque.prontaEntrega)
+    .some(qtd => qtd > 0);
+
+  if (modalidade === "prontaEntrega" && !temEstoquePronta) {
+    modalidade = "encomenda";
+  }
+
   modalidadeSelecionada = modalidade;
   tamanhoSelecionado = null;
   quantidade = 1;
 
   document.getElementById("quantidadeProduto").innerText = quantidade;
 
-  document.getElementById("btnPronta").classList.remove("active");
-  document.getElementById("btnEncomenda").classList.remove("active");
+  const btnPronta = document.getElementById("btnPronta");
+  const btnEncomenda = document.getElementById("btnEncomenda");
 
-  if (modalidade === "prontaEntrega") {
-    document.getElementById("btnPronta").classList.add("active");
+  btnPronta.classList.remove("active", "disabled");
+  btnEncomenda.classList.remove("active");
+
+  if (!temEstoquePronta) {
+    btnPronta.disabled = true;
+    btnPronta.classList.add("disabled");
   } else {
-    document.getElementById("btnEncomenda").classList.add("active");
+    btnPronta.disabled = false;
+  }
+
+  if (modalidadeSelecionada === "prontaEntrega") {
+    btnPronta.classList.add("active");
+  } else {
+    btnEncomenda.classList.add("active");
   }
 
   controlarPersonalizacaoPorModalidade();

@@ -1037,3 +1037,11 @@ button{
   background:var(--gold);
   color:#000;
 }
+.modal-options button.disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}
+.modal-options button.disabled{
+  opacity:.45;
+  cursor:not-allowed;
+}

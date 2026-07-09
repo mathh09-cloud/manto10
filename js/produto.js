@@ -116,29 +116,51 @@ function trocarImagemProduto(imagem, elemento) {
 }
 
 function selecionarModalidadeProduto(modalidade) {
+  const temEstoquePronta = Object.values(produtoAtual.estoque.prontaEntrega)
+    .some(qtd => qtd > 0);
+
+  if (modalidade === "prontaEntrega" && !temEstoquePronta) {
+    modalidade = "encomenda";
+  }
+
   modalidadeProduto = modalidade;
   tamanhoProduto = null;
   quantidadeProduto = 1;
 
   document.getElementById("produtoQuantidade").innerText = quantidadeProduto;
 
-  document.getElementById("produtoBtnPronta").classList.remove("active");
-  document.getElementById("produtoBtnEncomenda").classList.remove("active");
+  const btnPronta = document.getElementById("produtoBtnPronta");
+  const btnEncomenda = document.getElementById("produtoBtnEncomenda");
 
-  if (modalidade === "prontaEntrega") {
-    document.getElementById("produtoBtnPronta").classList.add("active");
+  btnPronta.classList.remove("active", "disabled");
+  btnEncomenda.classList.remove("active");
+
+  if (!temEstoquePronta) {
+    btnPronta.disabled = true;
+    btnPronta.classList.add("disabled");
+  } else {
+    btnPronta.disabled = false;
+  }
+
+  if (modalidadeProduto === "prontaEntrega") {
+    btnPronta.classList.add("active");
 
     document.getElementById("produtoMensagemPrazo").innerHTML = `
       <strong>Disponível em estoque.</strong><br>
       Envio realizado o mais rápido possível após a confirmação do pedido.
     `;
   } else {
-    document.getElementById("produtoBtnEncomenda").classList.add("active");
+    btnEncomenda.classList.add("active");
 
-    document.getElementById("produtoMensagemPrazo").innerHTML = `
-      <strong>Prazo estimado:</strong><br>
-      30 a 45 dias.
-    `;
+    document.getElementById("produtoMensagemPrazo").innerHTML = temEstoquePronta
+      ? `
+        <strong>Prazo estimado:</strong><br>
+        30 a 45 dias.
+      `
+      : `
+        <strong>Disponível apenas por encomenda.</strong><br>
+        Prazo estimado: 30 a 45 dias.
+      `;
   }
 
   controlarPersonalizacaoProduto();
