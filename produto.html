@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produto | Manto10</title>
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo/logo-manto10.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo/logo-manto10.jpeg" alt="Manto10">
+      </a>
+    </div>
+
+    <div class="header-actions">
+  <a href="favoritos.html" class="favorite-link">
+    ♥ Favoritos <span id="favCount">0</span>
+  </a>
+
+  <a href="carrinho.html" class="cart-button">
+    🛒 Carrinho <span id="cartCount">0</span>
+  </a>
+</div>
+  </header>
+
+  <main class="product-detail-container">
+    <div id="produtoDetalhe"></div>
+  </main>
+
+  <section class="products">
+    <div class="section-title">
+      <h2>Você também pode gostar</h2>
+    </div>
+
+    <div id="produtosRelacionados" class="products-grid"></div>
+  </section>
+
+  <div id="toast" class="toast">Produto adicionado ao carrinho!</div>
+  <button id="topBtn" onclick="voltarTopo()">↑</button>
+<footer class="footer">
+  <h3>Manto10</h3>
+  <p>Camisas nacionais, internacionais e retrôs.</p>
+  <p>📦 Enviamos para todo o Brasil</p>
+  <p>💬 Atendimento via WhatsApp</p>
+  <p>📸 Instagram @manto10_fc</p>
+  <p>© 2026 Manto10. Todos os direitos reservados.</p>
+</footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/carrinho.js"></script>
+  <script src="js/produto.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Manto10 | Catálogo Online</title>
+
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="icon" href="img/logo/logo-manto10.jpeg">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="top-bar">
+    <span>🚚 Enviamos para todo o Brasil</span>
+    <span>⭐ Qualidade Premium</span>
+    <span>📱 Atendimento pelo WhatsApp</span>
+  </div>
+
+  <header class="header">
+    <div class="logo">
+      <img src="img/logo/logo-manto10.jpeg" alt="Manto10" />
+    </div>
+
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Pesquisar camisa..." />
+    </div>
+
+    <div class="header-actions">
+  <a href="favoritos.html" class="favorite-link">
+    ♥ Favoritos <span id="favCount">0</span>
+  </a>
+
+  <a href="carrinho.html" class="cart-button">
+    🛒 Carrinho <span id="cartCount">0</span>
+  </a>
+</div>
+  </header>
+
+  <nav class="category-menu">
+    <button class="filter-btn active" data-category="todos">Todos</button>
+    <button class="filter-btn" data-category="Clubes Brasileiros">Brasileiros</button>
+    <button class="filter-btn" data-category="Clubes Internacionais">Internacionais</button>
+    <button class="filter-btn" data-category="Seleções">Seleções</button>
+    <button class="filter-btn" data-category="Retrôs">Retrôs</button>
+  </nav>
+
+  <section class="availability-filter">
+    <p>Disponibilidade:</p>
+
+    <button class="availability-btn active" data-disponibilidade="todos">Todas</button>
+    <button class="availability-btn" data-disponibilidade="prontaEntrega">Pronta Entrega</button>
+    <button class="availability-btn" data-disponibilidade="encomenda">Encomenda</button>
+  </section>
+
+  <section class="hero">
+    <div class="hero-text">
+      <h1>Vista sua paixão.</h1>
+      <p>Camisas nacionais, internacionais e retrôs com qualidade premium.</p>
+      <a href="#produtos" class="hero-btn">Comprar agora</a>
+    </div>
+
+    <div class="hero-banner">
+      <img src="img/banner/banner-manto10.jpeg" alt="Banner Manto10" />
+    </div>
+  </section>
+
+  <section class="products" id="produtos">
+    <div class="section-title">
+      <h2>Lançamentos</h2>
+      <p>Escolha sua camisa e finalize pelo WhatsApp.</p>
+    </div>
+
+    <div id="lista-produtos" class="products-grid"></div>
+  </section>
+
+<div class="modal" id="produtoModal">
+  <div class="modal-content">
+    <button class="close-modal" onclick="fecharModal()">×</button>
+
+    <div class="modal-img">
+
+    <img id="modalImagem">
+
+    <div class="miniaturas" id="miniaturas"></div>
+
+</div>
+
+    <div class="modal-info">
+      <h2 id="modalNome"></h2>
+      <p id="modalCategoria"></p>
+
+      <h3>Disponibilidade</h3>
+
+      <div class="modal-options">
+        <button id="btnPronta" onclick="selecionarModalidade('prontaEntrega')">
+          ⚡ Pronta Entrega
+        </button>
+
+        <button id="btnEncomenda" onclick="selecionarModalidade('encomenda')">
+          📦 Encomenda
+        </button>
+      </div>
+
+      <p class="modal-price" id="modalPreco"></p>
+
+      <h3>Tamanho</h3>
+      <div class="sizes" id="modalTamanhos"></div>
+
+<div class="personalizacao-box" id="personalizacaoBox">
+  <label>
+    <input type="checkbox" id="checkPersonalizacao" onchange="alternarPersonalizacao()">
+    Adicionar nome + número (+R$20)
+  </label>
+
+  <div id="camposPersonalizacao" class="personalizacao-campos">
+    <input type="text" id="nomePersonalizado" placeholder="Nome na camisa">
+    <input type="text" id="numeroPersonalizado" placeholder="Número">
+  </div>
+</div>
+
+      <h3>Quantidade</h3>
+      <div class="quantity">
+        <button onclick="alterarQuantidade(-1)">-</button>
+        <span id="quantidadeProduto">1</span>
+        <button onclick="alterarQuantidade(1)">+</button>
+      </div>
+
+      <button class="add-cart" onclick="adicionarAoCarrinho()">Adicionar ao carrinho</button>
+    </div>
+  </div>
+</div>
+<div id="toast" class="toast">Produto adicionado ao carrinho!</div>
+<button id="topBtn" onclick="voltarTopo()">↑</button>
+<footer class="footer">
+  <h3>Manto10</h3>
+  <p>Camisas nacionais, internacionais e retrôs.</p>
+  <p>📦 Enviamos para todo o Brasil</p>
+  <p>💬 Atendimento via WhatsApp</p>
+  <p>📸 Instagram @manto10_fc</p>
+  <p>© 2026 Manto10. Todos os direitos reservados.</p>
+</footer>
+  <script src="js/produtos.js"></script>
+  <script src="js/carrinho.js"></script>
+  <script src="js/favoritos.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/filtros.js"></script>
+  <script src="js/pesquisa.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>

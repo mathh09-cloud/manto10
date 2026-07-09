@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho | Manto10</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="img/logo/logo-manto10.jpeg">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/logo/logo-manto10.jpeg" alt="Manto10">
+      </a>
+    </div>
+
+    <div class="header-actions">
+
+    <a href="favoritos.html" class="favorite-link">
+        ♥ Favoritos <span id="favCount">0</span>
+    </a>
+
+    <a href="index.html" class="hero-btn">
+        Voltar para loja
+    </a>
+
+</div>
+  </header>
+
+  <section class="products">
+    <div class="section-title">
+      <h2>Meu Carrinho</h2>
+      <p>Confira seu pedido antes de finalizar pelo WhatsApp.</p>
+    </div>
+
+    <div id="carrinhoLista"></div>
+
+    <div class="cart-summary">
+      <h2 id="totalCarrinho">Total: R$ 0,00</h2>
+      <button onclick="finalizarWhatsApp()">Finalizar pelo WhatsApp</button>
+      <button onclick="limparCarrinho()" class="clear-cart">Limpar carrinho</button>
+    </div>
+  </section>
+  <button id="topBtn" onclick="voltarTopo()">↑</button>
+<footer class="footer">
+  <h3>Manto10</h3>
+  <p>Camisas nacionais, internacionais e retrôs.</p>
+  <p>📦 Enviamos para todo o Brasil</p>
+  <p>💬 Atendimento via WhatsApp</p>
+  <p>📸 Instagram @manto10_fc</p>
+  <p>© 2026 Manto10. Todos os direitos reservados.</p>
+</footer>
+  <script src="js/carrinho.js"></script>
+  <script src="js/header.js"></script>
+
+</body>
+</html>
