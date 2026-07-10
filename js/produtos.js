@@ -80,7 +80,7 @@ const produtos = [
     categoria: "Seleções",
     tipo: "normal",
     marca: "Nike",
-    temporada: "2025/2026",
+    temporada: "2026/2027",
     versao: "Torcedor",
 
     estoque: {
@@ -154,7 +154,7 @@ const produtos = [
     categoria: "Clubes Internacionais",
     tipo: "normal",
     marca: "Adidas",
-    temporada: "25/26",
+    temporada: "2025/2026",
     versao: "Torcedor",
 
     estoque: {
@@ -191,7 +191,7 @@ const produtos = [
     categoria: "Seleções",
     tipo: "normal",
     marca: "Nike",
-    temporada: "2025/2026",
+    temporada: "2026/2027",
     versao: "Torcedor",
 
     estoque: {
