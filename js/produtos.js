@@ -294,4 +294,41 @@ const produtos = [
 
     destaque: true
   },
+
+  {
+    id: 9,
+    codigo: "00009",
+    nome: "Camisa Flamengo I 2026",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Adidas",
+    temporada: "2026",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/flamengo-2026/flamengo-2026-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/flamengo-2026/flamengo-2026-frente.jpeg",
+      "img/produtos/brasileiros/flamengo-2026/flamengo-2026-costas.jpeg"
+    ],
+
+    destaque: true
+  },
 ];
