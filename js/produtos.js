@@ -413,7 +413,7 @@ const produtos = [
     categoria: "Retrôs",
     tipo: "retro",
     marca: "Topper",
-    temporada: "Retrô",
+    temporada: "2000",
     versao: "Torcedor",
 
     estoque: {
