@@ -405,4 +405,41 @@ const produtos = [
 
     destaque: true
   },
+
+  {
+    id: 12,
+    codigo: "00012",
+    nome: "Camisa Corinthians I 2000",
+    categoria: "Retrôs",
+    tipo: "retro",
+    marca: "Topper",
+    temporada: "Retrô",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 175,
+      encomenda: 170
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/retros/corinthians-2000-casa/corinthians-2000-casa-frente.jpeg",
+    imagens: [
+      "img/produtos/retros/corinthians-2000-casa/corinthians-2000-casa-frente.jpeg",
+      "img/produtos/retros/corinthians-2000-casa/corinthians-2000-casa-costas.jpeg"
+    ],
+
+    destaque: true
+  },
 ];
