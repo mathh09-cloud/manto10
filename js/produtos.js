@@ -113,7 +113,7 @@ const produtos = [
   {
     id: 4,
     codigo: "00004",
-    nome: "Camisa Milan I Retrô 06/07",
+    nome: "Camisa Milan I 06/07",
     categoria: "Retrôs",
     tipo: "retro",
     marca: "Adidas",
@@ -438,6 +438,43 @@ const produtos = [
     imagens: [
       "img/produtos/retros/corinthians-2000-casa/corinthians-2000-casa-frente.jpeg",
       "img/produtos/retros/corinthians-2000-casa/corinthians-2000-casa-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 13,
+    codigo: "00013",
+    nome: "Camisa Barcelona II 03/04",
+    categoria: "Retrôs",
+    tipo: "retro",
+    marca: "Nike",
+    temporada: "2003/2004",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 175,
+      encomenda: 170
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/retros/barcelona-03-04-visitante/barcelona-03-04-visitante-frente.jpeg",
+    imagens: [
+      "img/produtos/retros/barcelona-03-04-visitante/barcelona-03-04-visitante-frente.jpeg",
+      "img/produtos/retros/barcelona-03-04-visitante/barcelona-03-04-visitante-costas.jpeg"
     ],
 
     destaque: true
