@@ -627,4 +627,152 @@ const produtos = [
 
     destaque: true
   },
+
+  {
+    id: 18,
+    codigo: "00018",
+    nome: "Camisa Barcelona I 20/21",
+    categoria: "Retrôs",
+    tipo: "retro",
+    marca: "Nike",
+    temporada: "2020/2021",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 175,
+      encomenda: 170
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/retros/barcelona-20-21-i/barcelona-20-21-i-frente.jpeg",
+    imagens: [
+      "img/produtos/retros/barcelona-20-21-i/barcelona-20-21-i-frente.jpeg",
+      "img/produtos/retros/barcelona-20-21-i/barcelona-20-21-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 19,
+    codigo: "00019",
+    nome: "Camisa Barcelona I 15/16",
+    categoria: "Retrôs",
+    tipo: "retro",
+    marca: "Nike",
+    temporada: "2015/2016",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 175,
+      encomenda: 170
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/retros/barcelona-15-16-i/barcelona-15-16-i-frente.jpeg",
+    imagens: [
+      "img/produtos/retros/barcelona-15-16-i/barcelona-15-16-i-frente.jpeg",
+      "img/produtos/retros/barcelona-15-16-i/barcelona-15-16-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 20,
+    codigo: "00020",
+    nome: "Camisa Barcelona I 07/08",
+    categoria: "Retrôs",
+    tipo: "retro",
+    marca: "Nike",
+    temporada: "2007/2008",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 175,
+      encomenda: 170
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/retros/barcelona-07-08-i/barcelona-07-08-i-frente.jpeg",
+    imagens: [
+      "img/produtos/retros/barcelona-07-08-i/barcelona-07-08-i-frente.jpeg",
+      "img/produtos/retros/barcelona-07-08-i/barcelona-07-08-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 21,
+    codigo: "00021",
+    nome: "Camisa Barcelona I 02/03",
+    categoria: "Retrôs",
+    tipo: "retro",
+    marca: "Nike",
+    temporada: "2002/2003",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 175,
+      encomenda: 170
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/retros/barcelona-02-03-i/barcelona-96-97-i-frente.jpeg",
+    imagens: [
+      "img/produtos/retros/barcelona-02-03-i/barcelona-02-03-i-frente.jpeg",
+      "img/produtos/retros/barcelona-02-03-i/barcelona-02-03-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
 ];
