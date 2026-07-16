@@ -1145,4 +1145,78 @@ const produtos = [
 
     destaque: true
   },
+
+  {
+    id: 32,
+    codigo: "00032",
+    nome: "Camisa Inter Miami I 25/26",
+    categoria: "Clubes Internacionais",
+    tipo: "normal",
+    marca: "Adidas",
+    temporada: "2025/2026",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/internacionais/miami-25-26-i/miami-25-26-i-frente.jpeg",
+    imagens: [
+      "img/produtos/internacionais/miami-25-26-i/miami-25-26-i-frente.jpeg",
+      "img/produtos/internacionais/miami-25-26-i/miami-25-26-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 33,
+    codigo: "00033",
+    nome: "Camisa Lyon I 25/26",
+    categoria: "Clubes Internacionais",
+    tipo: "normal",
+    marca: "Adidas",
+    temporada: "2025/2026",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/internacionais/lyon-25-26-i/lyon-25-26-i-frente.jpeg",
+    imagens: [
+      "img/produtos/internacionais/lyon-25-26-i/lyon-25-26-i-frente.jpeg",
+      "img/produtos/internacionais/lyon-25-26-i/lyon-25-26-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
 ];
