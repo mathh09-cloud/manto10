@@ -1330,4 +1330,263 @@ const produtos = [
 
     destaque: true
   },
+
+  {
+    id: 37,
+    codigo: "00037",
+    nome: "Camisa Remo I 2025",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Volt",
+    temporada: "2025",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/remo-25-i/remo-25-i-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/remo-25-i/remo-25-i-frente.jpeg",
+      "img/produtos/brasileiros/remo-25-i/remo-25-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 38,
+    codigo: "00038",
+    nome: "Camisa Remo I 2026",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Volt",
+    temporada: "2026",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/remo-26-i/remo-26-i-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/remo-26-i/remo-26-i-frente.jpeg",
+      "img/produtos/brasileiros/remo-26-i/remo-26-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 39,
+    codigo: "00039",
+    nome: "Camisa Remo 2025 Edição Especial",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Volt",
+    temporada: "2025",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/remo-25-es/remo-25-es-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/remo-25-es/remo-25-es-frente.jpeg",
+      "img/produtos/brasileiros/remo-25-es/remo-25-es-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 40,
+    codigo: "00040",
+    nome: "Camisa Paysandu II 2026",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Lobo",
+    temporada: "2026",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/paysandu-26-ii/paysandu-26-ii-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/paysandu-26-ii/paysandu-26-ii-frente.jpeg",
+      "img/produtos/brasileiros/paysandu-26-ii/paysandu-26-ii-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 41,
+    codigo: "00041",
+    nome: "Camisa Paysandu I 2026",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Lobo",
+    temporada: "2026",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/paysandu-26-i/paysandu-26-i-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/paysandu-26-i/paysandu-26-i-frente.jpeg",
+      "img/produtos/brasileiros/paysandu-26-i/paysandu-26-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 42,
+    codigo: "00042",
+    nome: "Camisa Paysandu I 2025",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Lobo",
+    temporada: "2025",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/paysandu-25-i/paysandu-25-i-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/paysandu-25-i/paysandu-25-i-frente.jpeg",
+      "img/produtos/brasileiros/paysandu-25-i/paysandu-25-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
+
+  {
+    id: 43,
+    codigo: "00043",
+    nome: "Camisa Paysandu III 2023",
+    categoria: "Clubes Brasileiros",
+    tipo: "normal",
+    marca: "Lobo",
+    temporada: "2023",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 0,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/brasileiros/paysandu-23-iii/paysandu-23-iii-frente.jpeg",
+    imagens: [
+      "img/produtos/brasileiros/paysandu-23-iii/paysandu-23-iii-frente.jpeg",
+      "img/produtos/brasileiros/paysandu-23-iii/paysandu-23-iii-costas.jpeg"
+    ],
+
+    destaque: true
+  },
 ];
