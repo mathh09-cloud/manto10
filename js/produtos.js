@@ -1848,4 +1848,41 @@ const produtos = [
 
     destaque: true
   },
+
+  {
+    id: 51,
+    codigo: "00051",
+    nome: "Camisa Liverpool I 26/27",
+    categoria: "Clubes Internacionais",
+    tipo: "normal",
+    marca: "Adidas",
+    temporada: "2026/2027",
+    versao: "Torcedor",
+
+    estoque: {
+      prontaEntrega: {
+        P: 0,
+        M: 0,
+        G: 1,
+        GG: 0
+      },
+      encomenda: ["P", "M", "G", "GG"]
+    },
+
+    preco: {
+      prontaEntrega: 145,
+      encomenda: 140
+    },
+
+    personalizacao: true,
+    valorPersonalizacao: 20,
+
+    imagem: "img/produtos/internacionais/liverpool-26-27-i/liverpool-26-27-i-frente.jpeg",
+    imagens: [
+      "img/produtos/internacionais/liverpool-26-27-i/liverpool-26-27-i-frente.jpeg",
+      "img/produtos/internacionais/liverpool-26-27-i/liverpool-26-27-i-costas.jpeg"
+    ],
+
+    destaque: true
+  },
 ];
