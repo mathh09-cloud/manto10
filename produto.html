@@ -15,7 +15,7 @@
 
 <body>
 
-  <header class="header">
+  <header class="header header-produto">
     <div class="logo">
       <a href="index.html">
         <img src="img/logo/logo-manto10.jpeg" alt="Manto10">
@@ -23,13 +23,17 @@
     </div>
 
     <div class="header-actions">
-  <a href="favoritos.html" class="favorite-link">
-    ♥ Favoritos <span id="favCount">0</span>
-  </a>
+  <a href="favoritos.html" class="favorite-link" aria-label="Favoritos">
+  <span class="header-icon">♥</span>
+  <span class="header-text">Favoritos</span>
+  <span id="favCount">0</span>
+</a>
 
-  <a href="carrinho.html" class="cart-button">
-    🛒 Carrinho <span id="cartCount">0</span>
-  </a>
+<a href="carrinho.html" class="cart-button" aria-label="Carrinho">
+  <span class="header-icon">🛒</span>
+  <span class="header-text">Carrinho</span>
+  <span id="cartCount">0</span>
+</a>
 </div>
   </header>
 
@@ -58,6 +62,7 @@
   <script src="js/produtos.js"></script>
   <script src="js/carrinho.js"></script>
   <script src="js/produto.js"></script>
+  <script src="js/favoritos.js"></script>
   <script src="js/header.js"></script>
 
 </body>

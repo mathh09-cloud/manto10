@@ -27,22 +27,7 @@
       <img src="img/logo/logo-manto10.jpeg" alt="Manto10" />
     </div>
 
-    <div class="search-box">
-      <input type="text" id="searchInput" placeholder="Pesquisar camisa..." />
-    </div>
-
-    <div class="header-actions">
-  <a href="favoritos.html" class="favorite-link">
-    ♥ Favoritos <span id="favCount">0</span>
-  </a>
-
-  <a href="carrinho.html" class="cart-button">
-    🛒 Carrinho <span id="cartCount">0</span>
-  </a>
-</div>
-  </header>
-
-  <nav class="category-menu">
+    <nav class="category-menu">
     <button class="filter-btn active" data-category="todos">Todos</button>
     <button class="filter-btn" data-category="Clubes Brasileiros">Brasileiros</button>
     <button class="filter-btn" data-category="Clubes Internacionais">Internacionais</button>
@@ -50,24 +35,62 @@
     <button class="filter-btn" data-category="Retrôs">Retrôs</button>
   </nav>
 
-  <section class="availability-filter">
+    <div class="search-box">
+      <input type="text" id="searchInput" placeholder="Pesquisar camisa..." />
+    </div>
+
+    <div class="header-actions">
+
+    <a href="favoritos.html" class="favorite-link">
+        <span class="header-icon">♥</span>
+        <span class="header-text">Favoritos</span>
+        <span id="favCount">0</span>
+    </a>
+
+    <a href="carrinho.html" class="cart-button">
+        <span class="header-icon">🛒</span>
+        <span class="header-text">Carrinho</span>
+        <span id="cartCount">0</span>
+    </a>
+
+    <button
+        type="button"
+        class="mobile-menu-button"
+        aria-label="Abrir categorias"
+        onclick="alternarMenuMobile()"
+    >
+        ☰
+    </button>
+</div>
+  </header>
+
+
+  <section class="hero-banner-full">
+
+    <picture>
+
+        <source
+            media="(max-width:768px)"
+            srcset="img/banner/banner-manto10-mobile.webp">
+
+        <img
+            src="img/banner/banner-manto10-desktop.webp"
+            alt="Banner Manto10">
+
+    </picture>
+
+    <a href="#produtos" class="hero-buy-btn">
+        Comprar agora
+    </a>
+
+</section>
+
+<section class="availability-filter">
     <p>Disponibilidade:</p>
 
     <button class="availability-btn active" data-disponibilidade="todos">Todas</button>
     <button class="availability-btn" data-disponibilidade="prontaEntrega">Pronta Entrega</button>
     <button class="availability-btn" data-disponibilidade="encomenda">Encomenda</button>
-  </section>
-
-  <section class="hero">
-    <div class="hero-text">
-      <h1>Vista sua paixão.</h1>
-      <p>Camisas nacionais, internacionais e retrôs com qualidade premium.</p>
-      <a href="#produtos" class="hero-btn">Comprar agora</a>
-    </div>
-
-    <div class="hero-banner">
-      <img src="img/banner/banner-manto10.jpeg" alt="Banner Manto10" />
-    </div>
   </section>
 
   <section class="products" id="produtos">
@@ -152,6 +175,24 @@
   <script src="js/filtros.js"></script>
   <script src="js/pesquisa.js"></script>
   <script src="js/header.js"></script>
+<script>
+  function alternarMenuMobile() {
+    const menu = document.querySelector(".category-menu");
 
+    if (menu) {
+      menu.classList.toggle("mobile-open");
+    }
+  }
+
+  document.querySelectorAll(".category-menu .filter-btn").forEach((botao) => {
+    botao.addEventListener("click", () => {
+      const menu = document.querySelector(".category-menu");
+
+      if (window.innerWidth <= 768 && menu) {
+        menu.classList.remove("mobile-open");
+      }
+    });
+  });
+</script>
 </body>
 </html>
